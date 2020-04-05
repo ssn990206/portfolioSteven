@@ -27,6 +27,9 @@
                     <a href="#aprodite">友會聯合舞會</a>
                     <a href="#FMC">成功登大人</a>
                     <a href="#IIM">工資管系會Logo</a>
+                    <a href="#poster1">海報-交流趴</a>
+                    <a href="#poster2">海報-小畢典</a>
+                    <a href="#poster3">海報-實習媒合會</a>
                 </div>
             </div>
         </div>
@@ -35,10 +38,10 @@
     <div class="bg" id="info">
         <div class="info">
             <div><img class="infoMe" src="./image/me.png"></div>
-            <div class="infoAbility"><img src="./image/NCKU.png" width=90%><img src="./image/AI.png" width=90%><img
-                    src="./image/Ps.png" width=90%><img src="./image/tele.png" width=90%></div>
-            <div class="infoAbility"><img src="./image/Ae.png" width=90%><img src="./image/C.png" width=90%><img
-                    src="./image/front.png" width=90%><img src="./image/mail.png" width=90%></div>
+            <div class="infoAbility"><img src="./image/NCKU.png" width=90%><img src="./image/AI.svg" width=90%><img
+                    src="./image/Ps.svg" width=90%><img src="./image/tele.svg" width=90%></div>
+            <div class="infoAbility"><img src="./image/Ae.svg" width=90%><img src="./image/C.svg" width=90%><img
+                    src="./image/front.svg" width=90%><img src="./image/mail.svg" width=90%></div>
         </div>
     </div>
     <div class="bg" id="about">
@@ -66,20 +69,29 @@
             <div><img class="imgLogo" src="./image/grandColor.png"></div>
             <div><img class="imgLogo" src="./image/grand.png"></div>
         </div>
-        <div class="info"id="aprodite">
+        <div class="info" id="aprodite">
             <div><img class="imgLogo" src="./image/AproditeLogo.png"></div>
             <div><img class="imgLogo" src="./image/AproditeColor.png"></div>
             <div><img class="imgLogo" src="./image/Aprodite.png"></div>
         </div>
-        <div class="info"id="FMC">
+        <div class="info" id="FMC">
             <div><img class="imgLogo" src="./image/FMCLogo.png"></div>
             <div><img class="imgLogo" src="./image/FMCColor.png"></div>
             <div><img class="imgLogo" src="./image/FMC.png"></div>
         </div>
-        <div class="info"id="IIM">
+        <div class="info" id="IIM">
             <div><img class="imgLogo" src="./image/IIMLogo.png"></div>
             <div><img class="imgLogo" src="./image/IIMColor.png"></div>
             <div><img class="imgLogo" src="./image/IIM.png"></div>
+        </div>
+        <div class="info" id="poster1">
+            <div><img class="imgPoster" src="./image/poster1.png"></div>
+        </div>
+        <div class="info" id="poster2">
+            <div><img class="imgPoster" src="./image/poster2.png"></div>
+        </div>
+        <div class="info" id="poster3">
+            <div><img class="imgPosterLong" src="./image/poster3.png"></div>
         </div>
     </div>
 </body>
@@ -137,6 +149,10 @@
         scroll-behavior: smooth;
     }
 
+    html::-webkit-scrollbar {
+        display: none;
+    }
+
     body {
         margin: 0px;
         /* background-image:url(./image/BG.svg);
@@ -161,6 +177,7 @@
         position: absolute;
         background-color: #f1f1f1;
         min-width: 160px;
+        margin-left: 20px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
     }
@@ -173,16 +190,17 @@
     }
 
     .dropdown-content a:hover {
-        background-color: #ddd;
+        background-color: #F7563A;
+        color: #F2F2F2;
     }
 
     .dropdown:hover .dropdown-content {
         display: block;
     }
 
-    .dropdown:hover .dropbtn {
+    /* .dropdown:hover .dropbtn {
         background-color: #3e8e41;
-    }
+    } */
 
     .bg {
         width: 100vw;
@@ -197,16 +215,17 @@
         height: 15vh;
     }
 
-    .navbarLogoDiv{
-        height:12vh;
+    .navbarLogoDiv {
+        height: 12vh;
         margin-left: 2vw;
         margin-top: 1.5vh;
         position: absolute;
-        align-items:center;
+        align-items: center;
     }
-    .navbarLogo{
-        height:12vh;
-        align-items:center;
+
+    .navbarLogo {
+        height: 12vh;
+        align-items: center;
     }
 
     .navbarBtndiv {
@@ -219,7 +238,7 @@
     }
 
     .navbarBtn {
-        width: 14vw;
+        width: 12vw;
         height: 100%;
         background-color: #F2F2F2;
         font-weight: regular;
@@ -228,8 +247,8 @@
         border-width: 3pt;
         border-style: solid;
         border-color: #333;
-        margin-left: 1vw;
-        margin-right: 1vw;
+        margin-left: 20PX;
+        margin-right: 20px;
         /* margin-top:20%; */
     }
 
@@ -295,8 +314,18 @@
         color: #717071;
     }
 
-    .imgLogo{
-        height:25vh;
+    .imgLogo {
+        height: 23vh;
+    }
+
+    .imgPoster{
+        margin-top:25%;
+        width:40vw;
+    }
+
+    .imgPosterLong{
+        height:70vh;
+        margin-top:25%;
     }
 </style>
 
