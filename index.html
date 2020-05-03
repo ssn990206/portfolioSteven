@@ -48,7 +48,9 @@
         <div class="info">
             <div>
                 <p class="aboutMe">我叫做翁毓翔，來自成功大學工業與資訊管理學系。擅長程式跟平面設計，個性外向喜歡跟別人互動。</p>
-                <p class="aboutMe">當初會對前端，UI/UX有興趣是因為自己喜歡程式，而且也對設計也有點了解，進而去了解前端跟UI/UX。因為學校對於相關課程非常稀少，所以有額外去買線上課程。前端的部分有去參加社團，去學習相關知識；UI/UX的部分也有去網路上學習，另外我有修學校三創課程，裡面的課都會有許多設計思考的環節。</p>
+                <p class="aboutMe">
+                    當初會對前端，UI/UX有興趣是因為自己喜歡程式，而且也對設計也有點了解，進而去了解前端跟UI/UX。因為學校對於相關課程非常稀少，所以有額外去買線上課程。前端的部分有去參加社團，去學習相關知識；UI/UX的部分也有去網路上學習，另外我有修學校三創課程，裡面的課都會有許多設計思考的環節。
+                </p>
                 <p class="aboutMe">雖然現在作品部分偏向平面比較多，但我希望能夠藉由此次機會去學到更多並充實自己。</p>
             </div>
             <div>
@@ -64,7 +66,7 @@
     </div>
     <div class="bg">
         <div class="info" id="grand">
-            <div><img class="imgLogo" src="./image/grandLogo.png"></div>
+            <a href="javascript:Popup('./image/grandLogo.png')"><div><img class="imgLogo" src="./image/grandLogo.png"></div></a>
             <div><img class="imgLogo" src="./image/grandColor.png"></div>
             <div><img class="imgLogo" src="./image/grand.png"></div>
         </div>
@@ -103,6 +105,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script language="JavaScript" type="text/javascript">
+        function Popup(pUrl) {
+            window.open("popup.htm?" + pUrl, "", "resizable=1,height=200,width=200");
+        } 
+    </script>
 </body>
 
 </html>
